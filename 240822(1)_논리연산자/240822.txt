@@ -1,0 +1,5 @@
+1) f or f or f => false
+2)  f or f or t => true
+3) t and f => false
+4) t and t and => true
+5) true

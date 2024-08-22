@@ -1,0 +1,25 @@
+const a = 10;
+const b = 20;
+const c = 10;
+const f = "20";
+
+result = a > b;
+console.log(result); // false
+
+result = a < b;
+console.log(result); // true
+
+result= a<=b;
+console.log(result); // true
+
+result= a >=c;
+console.log(result); // true
+
+result= b == f;
+console.log(result); // false -> true
+
+result= a!=b;
+console.log(result); // fasle -> true
+
+result = b === f;
+console.log(result); // false
