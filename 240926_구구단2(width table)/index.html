@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      table {
-        td {
-          padding: 10px;
-        }
+      td {
+        text-align: center;
+        padding: 5px;
       }
     </style>
   </head>
   <body>
     <script>
       document.write("<table>");
-      for (let i = 1; i <= 9; i++) {
-        document.write(`<tr><td>${i}단</td>`);
+      for (let i = 0; i <= 9; i++) {
+        document.write(`<tr>`);
         for (let j = 2; j <= 9; j++) {
-          document.write(`<td>${i}*${j}=${i * j}</td>`);
+          if (i == 0) {
+            document.write(`<td>${j}단</td>`);
+          } else {
+            document.write(`<td>${j}*${i}=${i * j}</td>`);
+          }
         }
         document.write("<tr>");
       }
