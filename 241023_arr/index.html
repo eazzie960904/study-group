@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let studyMember01 = ["지수", "지선", "예지", "혜정", "령희", "승연"];
+      let studyMember02 = ["보경", "정하", "예림", "희진", "다은"];
+
+      //1.
+      const push = studyMember01.push("리아");
+      console.log(studyMember01);
+
+      //2.
+      const unshift = studyMember02.unshift("리아");
+      console.log(studyMember02);
+
+      //3.
+      studyMember01.pop();
+      console.log(studyMember01);
+
+      //4.
+      studyMember02.shift();
+      console.log(studyMember02);
+
+      //5.
+      studyMember01.reverse();
+      console.log(studyMember01);
+
+      //6.
+      const studyMember03 = studyMember01.concat(studyMember02);
+      const newArr = studyMember03.unshift("리아");
+      console.log(studyMember03);
+
+      // 6. studyMember03 이라는 새로운 배열에 studyMember01과 studyMember02합치고 첫번째에 리아 넣기
+      // const studyMember03 = [...studyMember01, ...studyMember02];
+      // studyMember03.unshift("리아");
+      // console.log(studyMember03);
+
+      //7.
+      let join = studyMember03.join("+");
+      console.log(join);
+    </script>
+  </body>
+</html>
