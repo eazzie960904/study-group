@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const animals = ["ant", "bison", "camel", "duck", "elephant"];
+
+      // ["ant", "bison", "camel", "duck", "elephant"]
+      let arr1_1 = animals.slice(undefined);
+      console.log("1_1:", arr1_1);
+      let arr1_2 = animals.slice(0);
+      console.log("1_2:", arr1_2);
+      let arr1_3 = animals.slice(-5);
+      console.log("1_3:", arr1_3);
+
+      //["duck","elepahnt"]
+      let arr2_1 = animals.slice(3);
+      console.log("2_1:", arr2_1);
+      let arr2_2 = animals.slice(-2);
+      console.log("2_2:", arr2_2);
+
+      //["camel","duck","elephant"]
+      let arr3_1 = animals.slice(2);
+      console.log("3_1:", arr3_1);
+      let arr3_2 = animals.slice(-3);
+      console.log("3_2:", arr3_2);
+
+      //["camel","duck"]
+      let arr4_1 = animals.slice(2, 4);
+      console.log("4_1:", arr4_1);
+      let arr4_2 = animals.slice(-3, 4);
+      console.log("4_2:", arr4_2);
+
+      //[]
+      let arr5 = animals.slice(0, 0);
+      console.log("5:", arr5);
+
+      //["elephant"]
+      let arr6_1 = animals.slice(4);
+      console.log("6_1:", arr6_1);
+      let arr6_2 = animals.slice(-1);
+      console.log("6_2:", arr6_2);
+
+      //["ant"]
+      let arr7_1 = animals.slice(undefined, 1);
+      console.log("7_1:", arr7_1);
+      let arr7_2 = animals.slice(0, 1);
+      console.log("7_2:", arr7_2);
+      let arr7_3 = animals.slice(-5, 1);
+      console.log("7_3:", arr7_3);
+    </script>
+  </body>
+</html>
