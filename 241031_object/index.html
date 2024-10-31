@@ -21,7 +21,7 @@
       console.log(person.name);
 
       // 2. hello 함수 출력
-      console.log(person.hello());
+      person.hello();
 
       // 3. person 객체에 gender라는 속성 넣고 gender를 온점표기법으로 출력
       person.gender = "woman";
@@ -32,7 +32,7 @@
       person.bye = () => {
         console.log("Bye See you later!!");
       };
-      console.log(person.bye(""));
+      person.bye();
 
       // 5. person의 location 삭제 후 객체 콘솔로 출력
       delete person.location;
