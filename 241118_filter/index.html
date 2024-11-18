@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const numbers1 = [1, 2, 3, 4, 5, 6];
+
+      const results = numbers1.filter((num) => {
+        return num % 2 === 0;
+      });
+      console.log(results);
+
+      const numbers2 = [3, 5, 7, 2, 8];
+      const results2 = Math.max(...numbers2);
+      console.log(results2);
+    </script>
+  </body>
+</html>
